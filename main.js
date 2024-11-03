@@ -30,8 +30,17 @@ fetch(apiUrl)
             listItem.textContent = `${ticket.id} - $${customer.name}-${issue.description}-${details}`;
             productList.appendChild(listItem);
         });
-    })
+    
     //error
-    .catch(error => console.error('failed to load products. please try again later.', error));
+    .catch(error => console.error('failed to load products. please try again later.', error))
+
+    //task 4
+    }finally {
+        console.log('clean up');
+    }
+
+    )
+    finalizeTransaction ({items:[]});
+
 
     
